@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --bg: #f3f6fb;
+    --li: #e6f5ff;
+    --checkbox: #b5fcd1;
+    --card: #fafdff;
+    --btn: linear-gradient(to right, #84f9b2, #8fd4f3);
+    --heading: #545589;
+    /* --heading: ; */
+    --shadow: 0px 2px 10px #9899b5;
+    --shadow-input: 1px 2px 5px #c4e4fa;
+    --green: #84f9b2;
+    --label: #1d1f57;
+}
+
+*{
+    font-family: 'rubik', sans-serif; 
+}
+
+body{
+    background-color: var(--bg);
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 24rem;
+    /* padding-top: 1rem; */
+    /* align-content: center;
+    justify-content: center; */
+}
+
+h1{
+    text-align: center;
+    color: var(--heading);
+    margin-bottom: 3rem;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--card);
+    padding: 3rem;
+    border-radius: 1rem; 
+    box-shadow: var(--shadow-input);
+}
+
+#todoForm{
+    align-self: center;
+    margin-bottom: 2rem;
+    background-color: var(--card);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0rem 0.8rem; */
+}
+
+#todo-input{
+    padding: 0.58rem 1rem;
+    border-width: 0rem;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-input);
+    background-color: var(--car);
+    width: 79%;
+    height: 1.3rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    border-radius: 1.8rem;
+    border: none;
+    padding: 0.58rem 1.2rem;
+    background-image: var(--btn);
+    color: var(--bg);
+    font-size:0.9rem;
+    height: 2.6rem;
+}
+
+button{
+    border-radius: 2rem;
+    border: none;
+    padding: 0.53rem 1.2rem;
+    background-image: var(--btn);
+    color: var(--bg);
+}
+
+#todoList{
+    align-self: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--card);
+    /* taking the size of the container */
+    width: 100%;
+    height: 100%;
+}
+
+
+input[type="checkbox"]{
+    /* border-radius: 50%; */
+    /* padding: 0.1rem; */
+    /* height: 1rem;
+    width: 1rem; */
+    accent-color: var(--checkbox);
+    border: 1px solid var(--green);
+    /* background-color: var(--green);
+    outline: var(--green); */
+}
+
+.listLabel_css{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: var(--label);
+    margin-left: 0.4rem;
+}
+
+.listItem_css{
+    display: flex;
+    margin: 1.4rem 0rem;
+    border-radius: 2rem;
+    background-color: var(--li);
+    padding-left: 0.7rem;
+    /* padding-top: 0.3rem;
+    padding-bottom: 0.3rem; */
+    height: 2.4rem;
+}
+
+.checkbox_css{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
